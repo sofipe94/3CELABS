@@ -744,13 +744,13 @@ footer .footer_legal a {
         margin: 7px 0px;
     }
     header .navbar-nav .nav-item a {
-        font-size: 90%;
+        font-size: 100%;
         text-decoration: none;
         color: var(--blue);
         margin: 0px;
     }
     header .navbar-nav .nav-item .language {
-        font-size: 70%;
+        font-size: 80%;
         width: 100%;
         margin-top: 15px;
     }
@@ -803,7 +803,7 @@ footer .footer_legal a {
     main .products_info p{
         padding: 20px;
         padding-bottom: 5px;
-        font-size: 80%;
+        font-size: 100%;
     }
     main .products_info a{
         padding: 10px 40px 15px;
@@ -816,12 +816,12 @@ footer .footer_legal a {
     }
     main .capacitaciones_column2 p{
         padding: 10px;
-        font-size: 70%;
+        font-size: 100%;
         margin-bottom: 0px;
     }
     main .capacitaciones_column2 a{
         padding: 10px 40px 15px;
-        font-size: 80%;
+        font-size: 90%;
         margin-bottom: 10px;
     }
     main .contacto_text {
@@ -830,7 +830,7 @@ footer .footer_legal a {
     }
     main .contacto_text p {
         padding: 30px 40px;
-        font-size: 80%;
+        font-size: 100%;
         margin-bottom: 0px;
     }
     main .contacto_text a {
@@ -1003,7 +1003,7 @@ footer .footer_legal a {
         align-items: center;
         justify-content: center;
         width: 100%;
-        font-size: 150%;
+        font-size: 170%;
         margin-bottom: 30px;
     }
     main .productos_home_info_text p{
@@ -1011,7 +1011,7 @@ footer .footer_legal a {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 80%;
+        font-size: 100%;
         text-align: center;
     }
 }
@@ -1043,7 +1043,7 @@ footer .footer_legal a {
     main .slogan p{
         margin: 20px;
         padding: 0px 20px;
-        font-size: 90%;
+        font-size: 100%;
     }
     main .slogan a{
         padding: 7px 60px 12px;
@@ -1061,7 +1061,7 @@ footer .footer_legal a {
     }
     main .products_info p{
         padding: 20px;
-        font-size: 90%;
+        font-size: 100%;
     }
     main .products_info a{
         padding: 15px 50px 20px;
@@ -1118,7 +1118,7 @@ footer .footer_legal a {
     main .contacto_text p {
         color: var(--blue);
         padding: 20px 40px;
-        font-size: 90%;
+        font-size: 100%;
     }
     main .contacto_text a {
         padding: 7px 50px 12px;
@@ -1130,7 +1130,7 @@ footer .footer_legal a {
     main .slogan p{
         margin: 10px;
         padding: 0px 10px;
-        font-size: 75%;
+        font-size: 100%;
     }
 }
 @media (max-width: 416px) {
