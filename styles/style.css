@@ -399,6 +399,68 @@ main .contacto_text a:hover{
     background-color: var(--blue);
     box-shadow: 11px 13px 23px -12px rgba(0,0,0,0.71);
 }
+main .productos_home_encabezado{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--lightgrey), var(--darkgrey));
+    color: var(--blue);
+    font-family: 'Co Headline';
+}
+main .productos_home_div{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+main .productos_home_img{
+    width: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+main .productos_home_img img{
+    width: 70%;
+    height: auto;
+}
+main .productos_home_info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-right: 50px;
+}
+main .productos_home_info_text h3{
+    width: 100%;
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+main .productos_home_info_text p{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+main .productos_home_info_btn{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+main .productos_home_info_btn a{
+    text-decoration: none;
+    color: var(--white);
+}
+main .productos_home_info_btn a:hover{
+    text-decoration: underline;
+}
 footer .mobile {
     display: none;
 }
@@ -459,6 +521,7 @@ footer .footer_links {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
     padding: 80px 100px;
     border-left: solid 1px var(--white);
     border-right: solid 1px var(--white);
@@ -504,7 +567,12 @@ footer .footer_links_social a {
 }
 footer .footer_links_social a img {
     margin-right: 10px;
-    margin-top: 7px;
+    margin-top: 5px;
+}
+footer .footer_links_social .linkedin_logo{
+    width: 18px;
+    height: auto;
+    border-radius: 20px;
 }
 footer .footer_legal {
     display: flex;
@@ -627,7 +695,7 @@ footer .footer_legal a {
     }
     footer .footer_links_navigate h5 {
         font-size: 130%;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     footer .footer_links_navigate a {
         font-size: 90%;
@@ -855,6 +923,11 @@ footer .footer_legal a {
         margin-right: 10px;
         margin-top: 7px;
     }
+    footer .footer_links_social_mobile .linkedin_logo{
+        width: 18px;
+        height: auto;
+        border-radius: 20px;
+    }
 }
 @media (max-width: 650px) {
     main .popup-col1 img {
@@ -893,13 +966,61 @@ footer .footer_legal a {
     main .popup-footer .btn-later{
         font-size: 70%;
     }
+    main .productos_home_div{
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .productos_home_img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .productos_home_img img{
+        width: 55%;
+        height: auto;
+    }
+    main .productos_home_info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px;
+    }
+    main .productos_home_info_text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .productos_home_info_text h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 150%;
+        margin-bottom: 30px;
+    }
+    main .productos_home_info_text p{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+        text-align: center;
+    }
 }
 @media (max-width: 500px){
     header .navbar-toggler{
         border: none;
         margin-right: 20px;
     }
-    header .navbar .container-fluid a{
+    header .navbar .container-fluid .logo{
         margin-left: 30px;
     }
     header .navbar .container-fluid a img{

@@ -15,8 +15,8 @@
 // })
 
 
-const myModal = new bootstrap.Modal ('#popUp');
+// const myModal = new bootstrap.Modal ('#popUp');
 
-window.addEventListener('DOMContentLoaded' , () => {
-    myModal.show();
-})
+// window.addEventListener('DOMContentLoaded' , () => {
+//     myModal.show();
+// })
