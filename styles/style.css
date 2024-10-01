@@ -47,7 +47,11 @@ body {
 }
 header {
     margin: 0px;
-    padding: 0px;
+    padding: 0.5px;
+    position: sticky;
+    top: 0;
+    background-color: var(--blue);
+    z-index: 1000;
 }
 header .navbar {
     padding: 0px;
@@ -260,7 +264,7 @@ main .phrase{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/background/home/ola_background.png");
+    background-image: url("../assets/background/home/ola_background.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -401,86 +405,288 @@ main .contacto_text a:hover{
 }
 main .productos_home_encabezado{
     width: 100%;
-    padding: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(var(--lightgrey), var(--darkgrey));
-    color: var(--blue);
-    font-family: 'Co Headline';
+    color: var(--white);
+}
+main .productos_home_encabezado img{
+    width: 100%;
+    height: auto;
+}
+main .productos_home_encabezado p{
+    padding: 30px 160px;
+    font-size: 120%;
+}
+main .products_header {
+    margin: -150px 50px 120px 50px;
+    font-size: 350%;
 }
 main .productos_home_div{
-    width: 100%;
-    margin: 20px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
+    padding: 0px 160px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
 }
 main .productos_home_img{
-    width: 30%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
 }
 main .productos_home_img img{
-    width: 70%;
-    height: auto;
+    height: 100%;
+    margin-top: 0px;
+    overflow: hidden;
 }
 main .productos_home_info{
-    width: 70%;
+    padding: 30px 90px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    padding-right: 50px;
+    justify-content: space-around;
+    color: var(--blue);
+    background-color: var(--lightgrey);
 }
-main .productos_home_info_text h3{
+main .productos_home_info h3{
     width: 100%;
     font-size: 200%;
-    margin-bottom: 30px;
+    padding: 0px;
+    margin: 0%;
+    font-family: 'Co Headline' ;
 }
-main .productos_home_info_text p{
+main .productos_home_info p{
     width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
+    font-size: 100%;
+    margin: 20px 0px;
+    padding-right: 30px;
 }
 main .productos_home_info_btn{
-    width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    padding-right: 50px;
-    margin-top: 20px;
-}
-main .productos_home_info_btn a{
     text-decoration: none;
     color: var(--white);
+    font-size: 110%;
+    border: solid 1px var(--blue);
+    border-radius: 60px;
+    padding: 7px 30px 11px;
+    background-color: var(--blue);
+    opacity: 0.45;
 }
-main .productos_home_info_btn a:hover{
-    text-decoration: underline;
+main .productos_home_info_btn:hover{
+    opacity: 1;
+}
+main .elasticapl_encabezado {
+    background-image: url("../assets/background/productos/elasticaplateada.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .elasticador_encabezado {
+    background-image: url("../assets/background/productos/elasticadorada.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .elastica_logo{
+    margin: 180px 0px 100px;
+    width: 40%;
+}
+main .elastica_btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+main .elastica_btns a{
+    padding: 20px 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .elastica_subr {
+    border-bottom: 3px solid var(--white);
+}
+main .elastica_descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 140px;
+    margin-top: 80px;
+}
+main .caja_elas{
+    width: 50%;
+    padding: 0px 30px;
+}
+main .elastica_descripcion_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 75px;
+}
+main .elastica_descripcion_text img{
+    width: 50%;
+    margin-bottom: 15px;
+}
+main .elastica_descripcion_text p{
+    font-size: 105%;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+main .grid-container {
+    margin: -180px 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+main .grid-item {
+    background-color: var(--lightgrey);
+}
+main .grid-item .img_grid{
+    width: 100%;
+    height: auto;
+}
+main .grid_text{
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+main .grid_web {
+    display: flexbox;
+}
+main .grid_mobile {
+    display: none;
+}
+main .usos_y_benef {
+    padding: 50px 0px;
+    width: 70%;
+}
+main .text_grid {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+main .usos {
+    width: 150%;
+    padding-top: 10px;
+}
+main .usos_esp {
+    width: 195%;
+    padding-top: 10px;
+}
+main .usos_doblesp {
+    width: 62%;
+    padding-top: 10px;
+}
+main .usos_item {
+    color: var(--blue);
+    padding-left: 40px;
+}
+main .usos_item_esp {
+    color: var(--blue);
+    padding-left: 45px;
+}
+main .usos_item_doblesp {
+    color: var(--blue);
+    padding-left: 25px;
+}
+main .usos_item p{
+    margin: 0;
+}
+main .usos_item_esp p{
+    margin: 0;
+}
+main .usos_item_doblesp p{
+    margin: 0;
+}
+main .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--lightgrey);
+}
+main .accordion-item {
+    background-color: var(--lightgrey);
+    color: var(--blue);
+    border: 0px;
+    width: 100%;
+    margin: 18px 0px;
+}
+main .accordion-button {
+    background-color: var(--lightgrey);
+    padding: 10px 130px 10px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    color: var(--blue);
+}
+main .accordion-body {
+    padding-left: 70px;
+    margin: 0px;
+}
+main .accordion-body p {
+    margin: 5px 0px ;
+}
+main .elast_aplicacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main .elast_aplicacion img {
+    height: 70%;
+    margin-right: 20px;
+}
+main .elast_aplicacion p {
+    font-size: 120%;
+    padding-bottom: 7px;
+    font-weight: 550;
 }
 footer .mobile {
     display: none;
+}
+.ft_basic {
+    background-image: url(../assets/background/footer/olas_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    margin: 0;
+}
+.ft_plat {
+    background-image: url(../assets/background/footer/elasticapl_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-top: 250px;    
+}
+.ft_dor {
+    background-image: url(../assets/background/footer/elasticador_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-top: 250px;    
 }
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/background/footer/olas_footer.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
 }
 footer .footer_logo {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
+    padding-top: 250px;
+    margin-bottom: 80px;
 }
 footer .footer_logo img {
     width: 20%;
@@ -569,11 +775,6 @@ footer .footer_links_social a img {
     margin-right: 10px;
     margin-top: 5px;
 }
-footer .footer_links_social .linkedin_logo{
-    width: 18px;
-    height: auto;
-    border-radius: 20px;
-}
 footer .footer_legal {
     display: flex;
     flex-direction: column;
@@ -598,6 +799,42 @@ footer .footer_legal a {
     main .capacitaciones_column2 p{
         padding: 50px 100px 55px;
     }
+    main .productos_home_info{
+        padding: 20px;
+    }
+    main .productos_home_info h3{
+        font-size: 150%;
+    }
+    main .productos_home_info p{
+        font-size: 100%;
+        margin: 10px 0px;
+        padding-right: 10px;
+    }
+    main .productos_home_info_btn{
+        font-size: 100%;
+    }
+    main .elastica_logo{
+        margin: 100px 0px 50px;
+    }
+    main .elastica_descripcion {
+        padding: 0px 90px;
+    }
+    main .elastica_descripcion_text {
+        padding: 20px 55px;
+    }
+    main .elastica_descripcion_text p{
+        font-size: 95%;
+        margin-top: 15px;
+        line-height: 1.8;
+    }
+    main .accordion-button {
+        padding: 10px 80px 10px 70px;
+    }
+    main .elast_aplicacion p {
+        font-size: 90%;
+        padding-bottom: 7px;
+        font-weight: 550;
+    }
     footer .footer_hablemos a {
         font-size: 90%;
     }
@@ -614,6 +851,38 @@ footer .footer_legal a {
     }
     main .capacitaciones_column2 p{
         padding: 40px 80px 30px;
+    }
+    main .grid-container {
+        margin: -100px 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    main .grid_text{
+        padding: 0px 40px;
+    }
+    main .usos_y_benef {
+        width: 50%;
+    }
+    main .usos {
+        width: 100%;
+    }
+    main .usos_esp {
+        width: 145%;
+    }
+    main .usos_doblesp {
+        width: 55%;
+    }
+    main .usos_item p{
+        font-size: 90%;
+    }
+    main .usos_item_esp p{
+        font-size: 90%;
+    }
+    main .usos_item_doblesp p{
+        font-size: 90%;
+    }
+    main .accordion-button img {
+        width: 60%;
     }
     footer .footer_logo {
         margin-top: 30px;
@@ -675,6 +944,28 @@ footer .footer_legal a {
         font-size: 100%;
         margin: 10px 50px;
     }
+    main .productos_home_encabezado p{
+        padding: 30px 50px;
+        font-size: 100%;
+    }
+    main .productos_home_div{
+        padding: 0px 50px;
+        grid-template-columns: 50% 50%;
+    }
+    main .productos_home_info{
+        padding: 20px;
+    }
+    main .productos_home_info h3{
+        font-size: 130%;
+    }
+    main .productos_home_info p{
+        font-size: 90%;
+        margin: 10px 0px;
+        padding-right: 10px;
+    }
+    main .productos_home_info_btn{
+        font-size: 80%;
+    }
     footer {
         margin-bottom: 20px;
     }
@@ -715,6 +1006,41 @@ footer .footer_legal a {
     }
     footer .footer_legal a {
         font-size: 90%;
+    }
+}
+@media (max-width: 1130px) {
+    main .elastica_descripcion {
+        padding: 0px 20px;
+        margin-top: 60px;
+    }
+    main .caja_elas{
+        padding: 0px 10px;
+    }
+    main .elastica_descripcion_text {
+        padding: 10px 25px;
+    }
+    main .elastica_descripcion_text img{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    main .elastica_descripcion_text p{
+        font-size: 85%;
+        line-height: 1.6;
+    }
+    main .grid-container {
+        margin: -200px 70px;
+    }
+    main .grid_text{
+        padding: 0px 20px;
+    }
+    main .usos_item {
+        padding-left: 20px;
+    }
+    main .usos_item_esp {
+        padding-left: 25px;
+    }
+    main .usos_item_doblesp {
+        padding-left: 5px;
     }
 }
 @media (max-width: 992px) {
@@ -787,6 +1113,88 @@ footer .footer_legal a {
         top: 0;
         right: 0;
     }
+    main .products_header {
+        margin: -100px 50px 100px 50px;
+        font-size: 250%;
+    }
+    main .productos_home_div{
+        padding: 0px 50px;
+        grid-template-columns: 40% 60%;
+    }
+    main .productos_home_info{
+        padding: 20px;
+    }
+    main .productos_home_info h3{
+        font-size: 120%;
+    }
+    main .productos_home_info p{
+        font-size: 80%;
+        margin: 10px 0px;
+        padding-right: 10px;
+    }
+    main .productos_home_info_btn{
+        font-size: 80%;
+    }
+    main .elastica_btns a{
+        padding: 20px 20px;
+        margin: 10px;
+    }
+    main .elastica_descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+    }
+    main .caja_elas{
+        width: 70%;
+    }
+    main .elastica_descripcion_text {
+        width: 100%;
+        margin-top: -300px;
+        padding: 20px 35px;
+    }
+    main .exp_dor {
+        margin-top: 20px;
+    }
+    main .elastica_descripcion_text img{
+        width: 30%;
+        margin-bottom: 15px;
+    }
+    main .elastica_descripcion_text p{
+        font-size: 90%;
+    }
+    main .grid_mobile {
+        display: block;
+    }
+    main .grid_web {
+        display: none;
+    }
+    main .grid-container {
+        grid-template-columns: 100%;
+        padding: 0px 120px;
+        margin: 0px 60px;
+    }
+    main .grid_text{
+        padding: 50px;
+    }
+    main .accordion {
+        padding: 90px 0px;
+    }
+    main .accordion-button {
+        padding: 5px 130px 5px 70px;
+    }
+    main .elast_aplicacion p {
+        font-size: 100%;
+    }
+    main .accordion-body p {
+        font-size: 100%;
+    }
+    footer .footer_logo {
+        padding-top: 100px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
 }
 @media (max-width: 950px) {
     main .slogan p{
@@ -845,9 +1253,10 @@ footer .footer_legal a {
     footer {
         background-size: 150%;
         background-position:top;
-        margin-top: 50px;
     }
     footer .footer_logo {
+        padding-top: 100px;
+        margin-bottom: 10px;
         margin-top: 100px;
     }
     footer .footer_logo img {
@@ -929,6 +1338,60 @@ footer .footer_legal a {
         border-radius: 20px;
     }
 }
+@media (max-width: 850px) {
+    main .elastica_btns a{
+        padding: 20px 20px;
+        margin: 10px;
+    }
+    main .elastica_descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+    }
+    main .caja_elas{
+        width: 50%;
+    }
+    main .elastica_descripcion_text {
+        margin-top: -150px;
+    }
+    main .exp_dor {
+        margin-top: 0px;
+    }
+    main .elastica_descripcion_text img{
+        width: 30%;
+        margin-bottom: 15px;
+    }
+    main .elastica_descripcion_text p{
+        font-size: 90%;
+    }
+    main .grid-container {
+        grid-template-columns: 100%;
+        padding: 0px 80px;
+        margin: 0px 20px;
+    }
+    main .grid_text{
+        padding: 50px;
+    }
+    main .accordion {
+        padding: 90px 0px;
+    }
+    main .accordion-button {
+        padding: 5px 130px 5px 70px;
+    }
+    main .elast_aplicacion p {
+        font-size: 100%;
+    }
+    main .accordion-body p {
+        font-size: 100%;
+    }
+    footer .footer_logo {
+        padding-top: 50px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
 @media (max-width: 650px) {
     main .popup-col1 img {
         width: 60%;
@@ -966,53 +1429,42 @@ footer .footer_legal a {
     main .popup-footer .btn-later{
         font-size: 70%;
     }
-    main .productos_home_div{
-        margin: 20px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    main .productos_home_encabezado p{
+        padding: 30px 70px;
+        font-size: 100%;
     }
-    main .productos_home_img{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    main .products_header {
+        margin: -80px 50px 30px 50px;
+        font-size: 150%;
+    }
+    main .productos_home_div{
+        padding: 0px 70px;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 0px;
     }
     main .productos_home_img img{
-        width: 55%;
-        height: auto;
+        margin-top: 35px;
     }
     main .productos_home_info{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 50px;
+        padding: 30px 40px;
     }
-    main .productos_home_info_text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    main .elast_img{
+        width: 90%;
     }
-    main .productos_home_info_text h3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        font-size: 170%;
-        margin-bottom: 30px;
+    main .elastica_descripcion {
+        padding: 0px 20px;
     }
-    main .productos_home_info_text p{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 100%;
-        text-align: center;
+    main .caja_elas{
+        width: 70%;
+    }
+    main .grid-container {
+        padding: 0px 40px;
+        margin: 0px 10px;
+    }
+    footer .footer_logo {
+        padding-top: 80px;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 500px){
@@ -1105,19 +1557,22 @@ footer .footer_legal a {
         padding: 15px 50px 20px;
         font-size: 100%;
     }
-    /* main .contacto {
-        background-image: url(../assets/background/home/contacto_background.png);
-        background-size: 100% auto;
+    main .contacto {
+        background-image: url(../assets/background/home/contacto_background_mobile.png);
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: center;
-    } */
+    }
     main .contacto_text {
         width: 100%;
-        height: auto;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
     main .contacto_text p {
         color: var(--blue);
-        padding: 20px 40px;
+        padding: 50px 40px 20px;
         font-size: 100%;
     }
     main .contacto_text a {
@@ -1125,12 +1580,58 @@ footer .footer_legal a {
         font-size: 90%;
         margin: 10px 50px;
     }
+    main .productos_home_info h3{
+        font-size: 150%;
+    }
+    main .productos_home_info p{
+        font-size: 90%;
+        margin: 20px 0px;
+        padding-right: 10px;
+    }
+    main .productos_home_info_btn{
+        font-size: 90%;
+        padding: 7px 30px 11px;
+    }
 }
 @media (max-width: 450px) {
     main .slogan p{
         margin: 10px;
         padding: 0px 10px;
         font-size: 100%;
+    }
+    main .elastica_btns a{
+        padding: 20px ;
+        margin: 10px;
+    }
+    main .linea_div {
+        height: 10%;
+    }
+    main .elastica_descripcion_text {
+        margin-top: -120px;
+    }
+    main .elastica_descripcion_text p{
+        font-size: 80%;
+    }
+    main .grid_text{
+        padding: 30px;
+    }
+    main .usos_item p{
+        font-size: 80%;
+    }
+    main .usos_item_esp p{
+        font-size: 80%;
+    }
+    main .usos_item_doblesp p{
+        font-size: 80%;
+    }
+    main .accordion-button {
+        padding: 5px 30px 5px 30px;
+    }
+    main .elast_aplicacion p {
+        font-size: 80%;
+    }
+    main .accordion-body p {
+        font-size: 80%;
     }
 }
 @media (max-width: 416px) {
