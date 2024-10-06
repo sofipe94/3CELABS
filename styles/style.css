@@ -488,6 +488,20 @@ main .elasticador_encabezado {
     justify-content: center;
     align-items: center;
 }
+main .vliftbio_encabezado{
+    background-image: url("../assets/background/productos/vliftbio.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .vliftespi_encabezado{
+    background-image: url("../assets/background/productos/vliftesp.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 main .elastica_logo{
     margin: 180px 0px 100px;
     width: 40%;
@@ -501,6 +515,21 @@ main .elastica_btns {
     margin: 20px;
 }
 main .elastica_btns a{
+    padding: 20px 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .vlift_btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+main .vlift_btns a{
     padding: 20px 70px;
     margin: 20px;
     display: flex;
@@ -541,6 +570,9 @@ main .grid-container {
     margin: -180px 150px;
     display: grid;
     grid-template-columns: 50% 50%;
+}
+main .vlift_grid {
+    margin: 50px 150px;
 }
 main .grid-item {
     background-color: var(--lightgrey);
@@ -649,6 +681,117 @@ main .elast_aplicacion p {
     padding-bottom: 7px;
     font-weight: 550;
 }
+main .regenyal_encabezado {
+    background-image: url("../assets/background/productos/regenyal.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .regenyal_logo{
+    margin: 120px 0px 100px;
+    width: 40%;
+}
+main .regenyal_descripcion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px 100px;
+    margin-top: 20px;
+}
+main .regenyal_descripcion_text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 75px;
+}
+main .regenyal_descrip_text_largo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 75px;
+}
+main .regenyal_descripcion_text img{
+    width: 50%;
+    margin-bottom: 15px;
+}
+main .regenyal_descripcion_text p{
+    font-size: 105%;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+main .regenyal_descrip_text_largo img{
+    width: 50%;
+    margin-bottom: 15px;
+}
+main .regenyal_descrip_text_largo p{
+    font-size: 105%;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+main .regenyal_btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+main .regenyal_btns a{
+    padding: 20px 70px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    text-decoration: none;
+    color: var(--white);
+}
+main .subr {
+    border-bottom: solid 2px var(--white);
+    font-weight: 800;
+}
+main .regenyal-container {
+    margin: 70px 150px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+main .regenyal-item {
+    background-color: var(--lightgrey);
+}
+main .regenyal-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 50px;
+}
+main .regenyal-list-img {
+    margin: 0px 15px;
+}
+main .regenyal-item .img_grid_regenyal{
+    width: 100%;
+    height: auto;
+}
+main .subitem {
+    color: var(--blue);
+    font-size: 120%;
+    padding: 0px 80px 0px 30px;
+    margin: 10px 0px;
+}
+main .div_volver {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    padding-right: 100px;
+}
+main .volver {
+    text-decoration: none;
+    color: var(--blue);
+}
+main .armon {
+    margin-right: 30px;
+}
 footer .mobile {
     display: none;
 }
@@ -658,22 +801,69 @@ footer .mobile {
     background-size: 100%;
     background-position: top;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .ft_plat {
     background-image: url(../assets/background/footer/elasticapl_footer.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    padding-top: 250px;    
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;   
 }
 .ft_dor {
     background-image: url(../assets/background/footer/elasticador_footer.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    padding-top: 250px;    
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;   
 }
-footer {
+.ft_regenyal {
+    background-image: url(../assets/background/footer/regenyal_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-top: 150px; 
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+.ft_vliftbio {
+    background-image: url(../assets/background/footer/vliftbio_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-top: 150px; 
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+.ft_vliftespi {
+    background-image: url(../assets/background/footer/vliftesp_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-top: 150px; 
+    margin-top: -200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -857,6 +1047,9 @@ footer .footer_legal a {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    main .vlift_grid {
+        margin: 10px 100px;
+    }
     main .grid_text{
         padding: 0px 40px;
     }
@@ -966,6 +1159,14 @@ footer .footer_legal a {
     main .productos_home_info_btn{
         font-size: 80%;
     }
+    main .subitem {
+        font-size: 90%;
+        padding: 0px 20px;      
+    }
+    main .div_volver {
+        width: 100%;
+        padding-right: 20px;
+    }
     footer {
         margin-bottom: 20px;
     }
@@ -1009,9 +1210,16 @@ footer .footer_legal a {
     }
 }
 @media (max-width: 1130px) {
+    main .vlift_btns a{
+        padding: 20px 20px;
+        margin: 10px;
+    }
     main .elastica_descripcion {
         padding: 0px 20px;
         margin-top: 60px;
+    }
+    main .vlift_descripcion{
+        margin-top: 120px;
     }
     main .caja_elas{
         padding: 0px 10px;
@@ -1030,6 +1238,9 @@ footer .footer_legal a {
     main .grid-container {
         margin: -200px 70px;
     }
+    main .vlift_grid {
+        margin: 10px 100px;
+    }
     main .grid_text{
         padding: 0px 20px;
     }
@@ -1041,6 +1252,9 @@ footer .footer_legal a {
     }
     main .usos_item_doblesp {
         padding-left: 5px;
+    }
+    main .regenyal_descripcion {
+        padding: 0px 50px;
     }
 }
 @media (max-width: 992px) {
@@ -1154,6 +1368,9 @@ footer .footer_legal a {
         margin-top: -300px;
         padding: 20px 35px;
     }
+    main .vlift_descripcion_text {
+        margin-top: 10px;
+    }
     main .exp_dor {
         margin-top: 20px;
     }
@@ -1189,6 +1406,35 @@ footer .footer_legal a {
     }
     main .accordion-body p {
         font-size: 100%;
+    }
+    main .regenyal_descripcion {
+        padding: 0px 20px;
+        margin-top: 0px;
+    }
+    main .regenyal_descripcion_text {
+        padding: 10px 30px;
+    }
+    main .regenyal_descrip_text_largo {
+        padding: 10px 30px;
+    }
+    main .regenyal_descripcion_text p{
+        font-size: 90%;
+    }
+    main .regenyal_btns a{
+        padding: 20px 50px;
+        margin: 20px 0px;
+        font-size: 120%;
+        text-decoration: none;
+        color: var(--white);
+    }
+    main .regenyal-container {
+        margin: 70px 70px 0px;
+    }
+    main .regenyal-list {
+        padding: 30px 50px;
+    }
+    main .regenyal-list-img {
+        margin: 0px 10px;
     }
     footer .footer_logo {
         padding-top: 100px;
@@ -1343,6 +1589,9 @@ footer .footer_legal a {
         padding: 20px 20px;
         margin: 10px;
     }
+    main .vlift_img{
+        width: 90%;
+    }
     main .elastica_descripcion {
         display: flex;
         flex-direction: column;
@@ -1355,6 +1604,9 @@ footer .footer_legal a {
     }
     main .elastica_descripcion_text {
         margin-top: -150px;
+    }
+    main .vlift_descripcion_text {
+        margin-top: 0px;
     }
     main .exp_dor {
         margin-top: 0px;
@@ -1385,6 +1637,35 @@ footer .footer_legal a {
     }
     main .accordion-body p {
         font-size: 100%;
+    }
+    main .regenyal_logo{
+        margin: 80px 0px 50px;
+        width: 40%;
+    }
+    main .regenyal_descripcion {
+        grid-template-columns: 100%;
+        padding: 0px 50px;
+    }
+    main .regenyal_descrip_text_largo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    main .regenyal_descripcion_text img{
+        width: 20%;
+    }
+    main .regenyal_descrip_text_largo p{
+        font-size: 90%;
+    }
+    main .regenyal-container {
+        margin: 70px 100px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .regenyal-list {
+        padding: 50px;
+    }
+    main .regenyal-list-img {
+        margin: 15px;
     }
     footer .footer_logo {
         padding-top: 50px;
@@ -1461,6 +1742,36 @@ footer .footer_legal a {
     main .grid-container {
         padding: 0px 40px;
         margin: 0px 10px;
+    }
+    main .regenyal_logo{
+        margin: 50px 0px;
+        width: 70%;
+    }
+    main .regenyal_descripcion {
+        padding: 0px 30px;
+        margin-top: 20px;
+    }
+    main .regenyal_btns a{
+        padding: 10px;
+        margin: 20px 0px;
+        font-size: 60%;
+    }
+    main .regenyal-container {
+        margin: 50px 30px;
+    }
+    main .regenyal-list {
+        padding: 10px;
+    }
+    main .regenyal-list-img {
+        margin: 10px;
+    }
+    main .subitem {
+        font-size: 80%;
+        padding: 0px 20px;      
+    }
+    main .div_volver {
+        width: 100%;
+        padding-right: 20px;
     }
     footer .footer_logo {
         padding-top: 80px;
@@ -1608,6 +1919,12 @@ footer .footer_legal a {
     }
     main .elastica_descripcion_text {
         margin-top: -120px;
+    }
+    main .vlift_descripcion{
+        margin-top: 120px;
+    }
+    main .vlift_descripcion_text {
+        margin-top: 10px;
     }
     main .elastica_descripcion_text p{
         font-size: 80%;
